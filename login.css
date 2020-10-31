@@ -1,0 +1,51 @@
+.Theclone p{
+    padding : 0px; 
+    margin: 0px; 
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-left: 32px;
+    opacity: 0.6;
+    font-family: 'Varela Round';
+}
+
+.form-group{
+    margin: 50px;
+}
+
+.form-group>label{
+    letter-spacing: 0.2px;
+    text-align: end;
+}
+form h1{
+    font-family: 'Varela Round';
+    background-color:#25c16f;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 10px;
+    color: white;
+    padding:5px;
+    font-size: 1.5em; 
+    font-weight: bold;
+    text-align: center;
+    margin: 0% 25% 0% 25%;
+}
+
+.inner-form{
+    font-family: 'Varela Round';
+    margin: 0% 25% 0% 25%;
+}
+
+details{
+    margin: 25px; 
+    margin-bottom: 0px !important;
+}
+
+details p{
+    letter-spacing: 2px;
+    background-color: black;
+    color: white;
+}
+
+
+
+
