@@ -35,6 +35,17 @@ form h1{
     margin: 0% 25% 0% 25%;
 }
 
+details{
+    margin: 25px; 
+    margin-bottom: 0px !important;
+}
+
+details p{
+    letter-spacing: 2px;
+    background-color: black;
+    color: white;
+}
+
 @media(max-width:900px){
     .form-group{
         margin: 10px;
@@ -57,17 +68,6 @@ form h1{
 }
 
 
-
-details{
-    margin: 25px; 
-    margin-bottom: 0px !important;
-}
-
-details p{
-    letter-spacing: 2px;
-    background-color: black;
-    color: white;
-}
 
 
 
