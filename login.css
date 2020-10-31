@@ -35,6 +35,29 @@ form h1{
     margin: 0% 25% 0% 25%;
 }
 
+@media(max-width:900px){
+    .form-group{
+        margin: 10px;
+    }
+    form h1{
+        border-radius: 5px;
+        padding:2px;
+        font-size: inherit; 
+    }
+    details p{
+        letter-spacing: 1px;
+    }
+    .inner-form{
+        font-family: 'Varela Round';
+        margin: 2%;
+    }
+    .form-group>label{
+        text-align: start;
+    }
+}
+
+
+
 details{
     margin: 25px; 
     margin-bottom: 0px !important;
