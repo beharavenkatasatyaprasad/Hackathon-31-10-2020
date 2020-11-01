@@ -2,14 +2,13 @@
     text-align: center; 
     margin-top: 20%; 
     margin-bottom: auto;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .RedirectPage>a{
     text-decoration: none;
     font-size: 80px;
     padding: 2%;
-    font-family: 'Itim';
+    font-family: 'Varela Round','Times New Roman', Times, serif;
     color:  blue;
     background-color: blanchedalmond;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -18,7 +17,7 @@
 }
 
 .RedirectPage>a:hover{
-    color:  blanchedalmond;
+    color:  #fff;
     background-color: #25c16f;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     transition-delay: 0.5ms;
