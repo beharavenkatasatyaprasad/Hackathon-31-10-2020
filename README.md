@@ -6,7 +6,6 @@
 
 Thanks for checking out this repo [Hackathon-31-10-2020](https://github.com/beharavenkatasatyaprasad/Hackathon-31-10-2020/).
 
-Click [here](https://affectionate-varahamihira-c70f14.netlify.app/) to preview the app.
 
 ## The challenge
 
@@ -16,7 +15,7 @@ we can use any JavaScript framework/library on the front-end. You also have comp
 
 ## The Webapp
 
-I have included HTML,CSS & JavaScript on the front-end to develop this particular Webapp.
+Click [here](https://affectionate-varahamihira-c70f14.netlify.app/) to preview the app.
 
 Users are able to:
 
