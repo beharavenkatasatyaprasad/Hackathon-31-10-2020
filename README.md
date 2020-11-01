@@ -20,7 +20,7 @@ I have included HTML,CSS & JavaScript on the front-end to develop this particula
 
 Users are able to:
 
-- Login to access their freshdesk account using credentials.
+- Login to access their admin page using credentials.
 - list ticket all the tickets/Contacts.
 - Create/Update/Delete a ticket.
 - Create/Update/Delete a Contact.
