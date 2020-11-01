@@ -7,9 +7,9 @@
 Thanks for checking out this repo [Hackathon-31-10-2020](https://github.com/beharavenkatasatyaprasad/Hackathon-31-10-2020/).
 
 
-## The challenge
+## The Hackathon challenge
 
-Your challenge is to integrate with the [FreshDesk API](https://developers.freshdesk.com/api/) to get user's freshdesk data and make provisions to list ticket, create ticket, update ticket, delete ticket, list contact, create contact, update contact and delete contact.
+Challenge is to integrate with the [FreshDesk API](https://developers.freshdesk.com/api/) to get user's freshdesk data and make provisions to list ticket, create ticket, update ticket, delete ticket, list contact, create contact, update contact and delete contact.
 
 we can use any JavaScript framework/library on the front-end. You also have complete control over which packages you use to do things like make HTTP requests or style your project.
 
