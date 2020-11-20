@@ -16,7 +16,7 @@
   <body class="">
     <button onclick="topFunction()" id="myBtn" title="Go to top">Scroll Up</button>
     <div id="alert"></div>
-    <nav class="navbar shadow navbar-expand-md m-0 p-0" style="background-color:  	rgb(13, 119, 103);">
+    <nav class="navbar shadow navbar-expand-md m-0 p-0" style="background-color: rgb(13, 119, 103);">
       <a class="navbar-brand" style="float: left; padding: 1%;" href="" style="color:rgb(255, 255, 255);"><img src="imgs/freshdesk-logo.png" height="40" alt=""></a>
       <button class="navbar-toggler" id="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <i class="fa fa-bars"></i>
@@ -72,8 +72,8 @@
                 <input type="email" class="form-control" id="update-email" />
               </div>
               <div class="form-group">
-                <label for="phone">Ph.no</label>
-                <input type="text" class="form-control" id="update-phone" />
+                <label for="phone">Phone Number</label>
+                <input type="text" class="form-control" max="10" id="update-phone" />
               </div>
               <div class="form-group">
                 <label for="update-fb">Twitter Id:</label>
@@ -180,7 +180,7 @@
                   <th scope="col">#ID</th>
                   <th scope="col">Name</th>
                   <th scope="col">Email</th>
-                  <th scope="col">Ph.no</th>
+                  <th scope="col">Phone Number</th>
                   <th scope="col">Edit</th>
                 </tr>
               </thead>
@@ -194,29 +194,16 @@
           role="tabpanel"
           aria-labelledby="nav-create-tab"
         >
-          <div class="mx-5">
+          <div class="col-lg-8 col-sm-12 create-fields">
             <h1 class="text-center">Create Ticket</h1>
             <div class="form-group mb-1">
               <label for="email-create-ticket">Email Id</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email-create-ticket"
-                aria-describedby="emailHelp"
-                oninput="suggestContacts()"
-                list="suggestion-list"
-                autocomplete="off"
-                required
-              /><datalist id="suggestion-list"> </datalist>
+              <input type="email" class="form-control" id="email-create-ticket" aria-describedby="emailHelp" oninput="suggestContacts()" list="suggestion-list" autocomplete="off" required/>
+              <datalist id="suggestion-list"> </datalist>
             </div>
             <div class="form-group">
               <label for="subject-create">Subject</label>
-              <input
-                type="text"
-                class="form-control"
-                id="subject-create"
-                required
-              />
+              <input type="text" class="form-control" id="subject-create" required/>              
             </div>
             <div class="form-group">
               <label for="priority-create" class="col col-form-label"
@@ -251,64 +238,35 @@
                 required
               ></textarea>
             </div>
-            <button
-              type="button"
-              class="btn btn-block form-group btn-primary"
-              onclick="create_ticket()"
-            >
+            <button type="button" class="btn btn-block form-group btn-primary" onclick="create_ticket()">
               Submit
             </button>
           </div>
         </div>
-        <div
-        class="tab-pane fade"
-        id="nav-createContact"
-        role="tabpanel"
-        aria-labelledby="nav-create-tab"
-      >
-          <div class="mx-5">
+        <div class="tab-pane fade" id="nav-createContact" role="tabpanel" aria-labelledby="nav-create-tab">
+          <div class="col-lg-8 col-sm-12 create-fields">
             <h1 class="text-center">Create New Contact</h1>
             <div class="form-group">
               <label for="name-create">Name</label>
-              <input
-                type="text"
-                class="form-control"
-                id="name-create"
-                required
-              />
+              <input type="text" class="form-control" id="name-create" required/>
             </div>
             <div class="form-group">
               <label for="email-create-contact">Email Id</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email-create-contact"
-                aria-describedby="emailHelp"
-                required
-              />
+              <input type="email" class="form-control" id="email-create-contact" aria-describedby="emailHelp" required/>
             </div>
             <div class="form-group">
               <label for="phone-create">Phone Number</label>
-              <input type="text" class="form-control" id="phone-create" />
+              <input type="text" class="form-control" max="10" id="phone-create"/>
             </div>
             <div class="form-group">
               <label for="twitter-create">Twitter Id:</label>
-              <input type="text" class="form-control" id="twitter-create" />
+              <input type="text" class="form-control" id="twitter-create"/>
             </div>
             <div class="form-group">
               <label for="address-create">Address</label>
-              <textarea
-                type="text"
-                class="form-control"
-                id="address-create"
-                row="3"
-              ></textarea>
+              <textarea type="text" class="form-control" id="address-create" row="3"></textarea>
             </div>
-            <button
-              type="button"
-              class="btn btn-block btn-primary form-group"
-              onclick="create_contact()"
-            >
+            <button type="button" class="btn btn-block btn-primary form-group" onclick="create_contact()">
               Submit
             </button>
           </div>

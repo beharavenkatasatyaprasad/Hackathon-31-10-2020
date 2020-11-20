@@ -15,6 +15,11 @@
         opacity: 1; 
     } 
 } 
+
+body{
+    background-color: hsl(0, 0%, 86%);
+}
+
 #myBtn {
     display: none;
     position: fixed;
@@ -43,6 +48,7 @@
     background-color: white;
     margin: auto;
 }
+
 
 .nav-tabs .nav-link.active{
     color: rgb(13, 119, 103);
@@ -85,6 +91,30 @@ th,tr{
     letter-spacing: inherit !important;
     
 }
+
+.create-fields{
+    margin: auto; margin-top: 2%;
+     background-color:rgb(255, 255, 255); 
+     padding: 1%;
+     color: rgb(0, 0, 0); 
+     border-radius: 10px;
+     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+     transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+}
+
+.create-fields:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
 html {
     scroll-behavior: smooth;
-  }
+}
+
+.card{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+}
+
+.card:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}

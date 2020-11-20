@@ -60,10 +60,10 @@ function create_ticket_card(
   card.className = "card m-2 ";
   card.style.width = "20em";
   let priority = {
-    1: ["bg-success", "low"],
-    2: ["bg-primary", "medium"],
-    3: ["bg-warning", "high"],
-    4: ["bg-danger", "urgent"],
+    1: ["bg-danger", "urgent"],
+    4: ["bg-success", "low"],
+    3: ["bg-primary", "medium"],
+    2: ["bg-warning", "high"],
   };
   let status = {
     2: "open",
@@ -190,8 +190,7 @@ async function view_contacts_list() {
   }
 
   let parsedData = await data.json();
-
-
+ 
   contacts = parsedData;
 
   let contactList = document.getElementById("contacts-list");
