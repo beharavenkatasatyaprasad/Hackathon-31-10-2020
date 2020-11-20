@@ -30,7 +30,6 @@ async function view_ticket_list() {
 
   let parsedData = await data.json();
 
-  console.log(parsedData);
   let ticketList = document.getElementById("ticket-list");
   tickets = parsedData;
   ticketList.innerHTML = "";
