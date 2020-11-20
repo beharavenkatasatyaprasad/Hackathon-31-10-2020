@@ -1,0 +1,59 @@
+*{
+    font-family: 'Josefin Sans',sans-serif;
+}
+
+.fade-in , body{ 
+    animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+} 
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+} 
+
+.nav-tabs .nav-link.active{
+    color: rgb(13, 119, 103);
+}
+
+.btn{
+    background-color: rgb(13, 119, 103);
+    border: 1px solid  rgb(13, 119, 103);
+    color: white;
+    transition: all 0.5s;
+}
+
+.btn:hover, .btn:focus{
+    background-color:rgba(255, 166, 0, 0.863);
+    color: black;
+    letter-spacing: 1.5px;
+    border: 1px solid rgba(255, 166, 0, 0.863);
+}
+
+th,tr{
+    text-align: center;
+}
+
+.form-control:focus{
+    border-color:#25C16F;
+}
+
+
+#alert{
+    letter-spacing: 1.5px;
+}
+
+#logout-btn{
+    transition: all 0.5s;
+    letter-spacing: inherit !important;
+}
+
+#logout-btn:hover{
+    border: 0px solid transparent;
+    letter-spacing: inherit !important;
+    
+}

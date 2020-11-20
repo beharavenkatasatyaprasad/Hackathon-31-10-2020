@@ -1,4 +1,5 @@
 async function login() {
+  let button = document.getElementById('LoginBtn')
   let domain = document.getElementById("domain").value;
   if (!domain) return;
   let apikey = document.getElementById("apikey").value;
@@ -19,6 +20,7 @@ async function login() {
     custom_alert("danger", "invalid credentials!");
     console.log(await data.json());
   } else {
+    button.innerHTML = 'Loading...'
     window.localStorage.setItem("domain", domain);
     window.localStorage.setItem("api_key", apikey);
     window.location.href = `./admin.html`;
@@ -27,8 +29,8 @@ async function login() {
 function custom_alert(type, message) {
   let newAlert = $("#alert");
   newAlert.html(`
-  <div class="alert alert-${type} alert-dismissible fade show" role="alert">
-  <strong>${message}</strong></br>check console for more
+  <div class="fade-in alert alert-${type} alert-dismissible fade show" role="alert">
+  <strong>${message}</strong></br>
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
