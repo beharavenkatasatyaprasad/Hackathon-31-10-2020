@@ -24,7 +24,7 @@ Click [here](https://affectionate-varahamihira-c70f14.netlify.app/) to preview t
 Users are able to:
 
 - Login to access their admin page using credentials.
-- list ticket all the tickets/Contacts.
+- list all the tickets/Contacts.
 - Create/Update/Delete a ticket.
 - Create/Update/Delete a Contact.
 - Logout from admin page
