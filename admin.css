@@ -42,13 +42,17 @@ body{
   #myBtn:hover {
     background-color: #555;
   }
-.container{
+
+  .container{
     max-width: 100%;
     height: auto;
     background-color: white;
     margin: auto;
 }
 
+.modal{
+    color: rgb(13, 119, 103);
+}
 
 .nav-tabs .nav-link.active{
     color: rgb(13, 119, 103);
@@ -68,6 +72,14 @@ body{
     border: 1px solid rgba(255, 166, 0, 0.863);
 }
 
+#update_contact_button:hover{
+    letter-spacing: inherit !important;
+}
+
+#update_contact_button:focus{
+    letter-spacing: inherit !important;
+}
+
 th,tr{
     text-align: center;
 }
@@ -76,6 +88,9 @@ th,tr{
     border-color:#25C16F;
 }
 
+.bg-warning{
+    color: black !important;
+}
 
 #alert{
     letter-spacing: 1.5px;
@@ -93,10 +108,10 @@ th,tr{
 }
 
 .create-fields{
-    margin: auto; margin-top: 2%;
+    margin: auto; margin-top: 2%; margin-bottom: 2%;
      background-color:rgb(255, 255, 255); 
      padding: 1%;
-     color: rgb(0, 0, 0); 
+     color:rgb(13, 119, 103); 
      border-radius: 10px;
      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
      transition: all 0.5s cubic-bezier(.25,.8,.25,1);
@@ -111,10 +126,12 @@ html {
 }
 
 .card{
+    border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.5s cubic-bezier(.25,.8,.25,1);
 }
 
 .card:hover{
+    border-radius: 10px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }

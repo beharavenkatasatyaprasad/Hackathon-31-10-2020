@@ -23,21 +23,6 @@ body{
     background-size: cover;
 }
 
-.nav-buttons{
-    border-radius: 0%;
-}
-
-.welcome-page{
-    background: rgba(0, 0, 0, 0.8) !important;
-    color: white;
-}
-.header{
-    color: rgb(203, 32, 45,0.8);
-}
-.welcome-content ol>li{
-    margin: 2%;
-    font-size: 130%;
-}
 
 .input-container{
     margin: auto;

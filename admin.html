@@ -17,7 +17,7 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top">Scroll Up</button>
     <div id="alert"></div>
     <nav class="navbar shadow navbar-expand-md m-0 p-0" style="background-color: rgb(13, 119, 103);">
-      <a class="navbar-brand" style="float: left; padding: 1%;" href="" style="color:rgb(255, 255, 255);"><img src="imgs/freshdesk-logo.png" height="40" alt=""></a>
+      <a class="navbar-brand" style="float: left; padding: 1%;" href="" style="color:rgb(255, 255, 255);"><img src="imgs/freshdesk-logo.png" height="35" alt=""></a>
       <button class="navbar-toggler" id="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <i class="fa fa-bars"></i>
       </button>
@@ -52,42 +52,44 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            <div>
-              <div class="form-group">
-                <label for="contact-id">ID</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="contact-id"
-                  readonly
-                />
-              </div>
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="update-name" />
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="update-email" />
-              </div>
-              <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="text" class="form-control" max="10" id="update-phone" />
-              </div>
-              <div class="form-group">
-                <label for="update-fb">Twitter Id:</label>
-                <input type="text" class="form-control" id="update-twitter" />
-              </div>
-              <div class="form-group">
-                <label for="update-address">Address</label>
-                <textarea
-                  type="text"
-                  class="form-control"
-                  id="update-address"
-                  row="3"
-                ></textarea>
-              </div>
+          <form id="Update_Contact">
+            <div class="modal-body">
+              <div>
+                <div class="form-group">
+                  <label for="contact-id">ID</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="contact-id"
+                    readonly
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="update-name" />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="update-email" />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="text" class="form-control" maxlength="10" id="update-phone" />
+                </div>
+                <div class="form-group">
+                  <label for="update-fb">Twitter Id:</label>
+                  <input type="text" class="form-control" id="update-twitter" />
+                </div>
+                <div class="form-group">
+                  <label for="update-address">Address</label>
+                  <textarea
+                    type="text"
+                    class="form-control"
+                    id="update-address"
+                    row="2"
+                  ></textarea>
+                </div>
+              </form>
             </div>
           </div>
           <div class="modal-footer">
@@ -196,80 +198,84 @@
         >
           <div class="col-lg-8 col-sm-12 create-fields">
             <h1 class="text-center">Create Ticket</h1>
-            <div class="form-group mb-1">
-              <label for="email-create-ticket">Email Id</label>
-              <input type="email" class="form-control" id="email-create-ticket" aria-describedby="emailHelp" oninput="suggestContacts()" list="suggestion-list" autocomplete="off" required/>
-              <datalist id="suggestion-list"> </datalist>
+            <form id="create-ticket-form">
+              <div class="form-group">
+                <label for="email-create-ticket">Email Id</label>
+                <input type="email" class="form-control" id="email-create-ticket" aria-describedby="emailHelp" oninput="suggestContacts()" list="suggestion-list" autocomplete="off" required/>
+                <datalist id="suggestion-list"> </datalist>
+              </div>
+              <div class="form-group">
+                <label for="subject-create">Subject</label>
+                <input type="text" class="form-control" id="subject-create" required/>              
+              </div>
+              <div class="form-group">
+                <label for="priority-create" class="col col-form-label"
+                  >Priority</label
+                >
+                <select class="custom-select mr-sm-2" id="priority-create">
+                  <option value="1" selected>Low</option>
+                  <option value="2">Medium</option>
+                  <option value="3">High</option>
+                  <option value="4">Urgent</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="status-create" class="col col-form-label"
+                  >Status</label
+                >
+                <select class="custom-select mr-sm-2" id="status-create">
+                  <option value="2" selected>Open</option>
+                  <option value="3">Pending</option>
+                  <option value="4">Resolved</option>
+                  <option value="5">Closed</option>
+                  <option value="6">Waiting for Customer</option>
+                  <option value="7">Waiting for Third-party</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="details-create">Details</label>
+                <textarea
+                  class="form-control"
+                  id="details-create"
+                  rows="2"
+                  required
+                ></textarea>
+              </div>
+              <button type="button" class="btn btn-block form-group btn-primary" onclick="create_ticket()">
+                Submit
+              </button>
             </div>
-            <div class="form-group">
-              <label for="subject-create">Subject</label>
-              <input type="text" class="form-control" id="subject-create" required/>              
-            </div>
-            <div class="form-group">
-              <label for="priority-create" class="col col-form-label"
-                >Priority</label
-              >
-              <select class="custom-select mr-sm-2" id="priority-create">
-                <option value="1" selected>Low</option>
-                <option value="2">Medium</option>
-                <option value="3">High</option>
-                <option value="4">Urgent</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="status-create" class="col col-form-label"
-                >Status</label
-              >
-              <select class="custom-select mr-sm-2" id="status-create">
-                <option value="2" selected>Open</option>
-                <option value="3">Pending</option>
-                <option value="4">Resolved</option>
-                <option value="5">Closed</option>
-                <option value="6">Waiting for Customer</option>
-                <option value="7">Waiting for Third-party</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="details-create">Details</label>
-              <textarea
-                class="form-control"
-                id="details-create"
-                rows="3"
-                required
-              ></textarea>
-            </div>
-            <button type="button" class="btn btn-block form-group btn-primary" onclick="create_ticket()">
-              Submit
-            </button>
-          </div>
+          </form>
         </div>
         <div class="tab-pane fade" id="nav-createContact" role="tabpanel" aria-labelledby="nav-create-tab">
           <div class="col-lg-8 col-sm-12 create-fields">
-            <h1 class="text-center">Create New Contact</h1>
-            <div class="form-group">
-              <label for="name-create">Name</label>
-              <input type="text" class="form-control" id="name-create" required/>
+            <h1 class="text-center">Create Contact</h1>
+            <form id="create-contact-form">  
+              <div class="form-group">
+                <label for="name-create">Name</label>
+                <input type="text" class="form-control" id="name-create" required/>
+              </div>
+              <div class="form-group">
+                <label for="email-create-contact">Email Id</label>
+                <input type="email" class="form-control" id="email-create-contact" aria-describedby="emailHelp" required/>
+              </div>
+              <div class="form-group">
+                <label for="phone-create">Phone Number</label>
+                <input type="text" class="form-control" maxlength="10" id="phone-create"/>
+              </div>
+              <div class="form-group">
+                <label for="twitter-create">Twitter Id:</label>
+                <input type="text" class="form-control" id="twitter-create"/>
+              </div>
+              <div class="form-group">
+                <label for="address-create">Address</label>
+                <textarea type="text" class="form-control" id="address-create" row="2"></textarea>
+              </div>
+              <button type="button" class="btn btn-block btn-primary form-group" onclick="create_contact()">
+                Submit
+              </button>
             </div>
-            <div class="form-group">
-              <label for="email-create-contact">Email Id</label>
-              <input type="email" class="form-control" id="email-create-contact" aria-describedby="emailHelp" required/>
-            </div>
-            <div class="form-group">
-              <label for="phone-create">Phone Number</label>
-              <input type="text" class="form-control" max="10" id="phone-create"/>
-            </div>
-            <div class="form-group">
-              <label for="twitter-create">Twitter Id:</label>
-              <input type="text" class="form-control" id="twitter-create"/>
-            </div>
-            <div class="form-group">
-              <label for="address-create">Address</label>
-              <textarea type="text" class="form-control" id="address-create" row="3"></textarea>
-            </div>
-            <button type="button" class="btn btn-block btn-primary form-group" onclick="create_contact()">
-              Submit
-            </button>
-          </div>
+            </form>
         </div>
       </div>
     </div>

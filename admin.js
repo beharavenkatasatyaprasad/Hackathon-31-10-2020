@@ -167,7 +167,7 @@ async function delete_ticket(ticketId) {
     conn_status = false;
   });
   if (!conn_status) return;
-  custom_alert("warning", "deleted!");
+  custom_alert("warning", "Contact deleted!");
   view_ticket_list();
 }
 
@@ -210,9 +210,11 @@ function create_contact_card(id, name, email, phone) {
       <td id='name${id}'>${name}</td>
       <td id='email${id}'>${email}</td>
       <td id='phone${id}'>${phone}</td>
-      <td><button type="button" class="btn-block btn btn-primary" data-toggle="modal" data-target="#update-contact" onclick="fill_contact_details(${id})">
-  Update Contact
-</button></td>`;
+      <td>
+        <button type="button" class="btn-block btn btn-primary" id='update_contact_button' data-toggle="modal" data-target="#update-contact" onclick="fill_contact_details(${id})">
+          Update Contact
+        </button>
+      </td>`;
   return card;
 }
 
@@ -264,6 +266,7 @@ async function update_contact(item) {
 
   let parsedData = await data.json();
   custom_alert("success", "Contact Updated Successfully!");
+  document.getElementById('Update_Contact').reset()
   view_contacts_list();
 }
 
@@ -316,6 +319,7 @@ async function create_ticket() {
   }
 
   let parsedData = await data.json();
+  document.getElementById('create-ticket-form').reset();
   custom_alert("success", "ticket created Successfully!");
   view_ticket_list();
   view_contacts_list();
@@ -353,6 +357,7 @@ async function create_contact() {
 
   let parsedData = await data.json();
   custom_alert("success", "contact created successfully!");
+  document.getElementById('create-contact-form').reset()
   view_contacts_list();
 }
 
@@ -378,8 +383,8 @@ function logOut() {
 function custom_alert(type, message) {
   let newAlert = $("#alert");
   newAlert.html(`
-  <div class="fade-in alert alert-${type} alert-dismissible fade show" role="alert">
-  <strong>${message}</strong></br>
+  <div class="fade-in text-center m-0 alert alert-${type} alert-dismissible fade show" role="alert">
+  ${message}
   <button type="button" class=" close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
