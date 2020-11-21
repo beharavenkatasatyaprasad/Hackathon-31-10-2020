@@ -15,9 +15,9 @@ we can use any JavaScript framework/library on the front-end. You also have comp
 
 ## The Webapp
 
-Click [here](https://affectionate-varahamihira-c70f14.netlify.app/) to preview the app.
+Click [here](https://affectionate-varahamihira-c70f14.netlify.app/) to preview the app in action.
 
-For testing use the domain-name: `satyaprasadbehara` and api-key: `FEE7DSFfPCz35KqRTev`
+For testing use `domain-name: satyaprasadbehara` and `api-key: FEE7DSFfPCz35KqRTev`
 
 Users are able to:
 
