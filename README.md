@@ -27,7 +27,7 @@ Click [here](https://affectionate-varahamihira-c70f14.netlify.app/) to preview t
 - Logout from admin page
 
 ##### For testing use 
- - ``domain-name: satyaprasadbehara`` 
- - ``api-key: FEE7DSFfPCz35KqRTev``
+ - ``domain-name: satyaprasadbehara or satyaprasadbehara2``
+ - ``api-key: FEE7DSFfPCz35KqRTev or WSQv0Ow9ig4omqUWTFnh``
 
 <img  src="https://github.com/beharavenkatasatyaprasad/beharavenkatasatyaprasad/blob/main/gifs/bars.gif" alt=""/>
