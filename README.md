@@ -17,9 +17,6 @@ we can use any JavaScript framework/library on the front-end. You also have comp
 
 Click [here](https://affectionate-varahamihira-c70f14.netlify.app/) to preview the app in action.
 
-## For testing use 
- - ``domain-name: satyaprasadbehara`` 
- - ``api-key: FEE7DSFfPCz35KqRTev``
 
 Users are able to:
 
@@ -28,5 +25,9 @@ Users are able to:
 - Create/Update/Delete a ticket.
 - Create/Update/Delete a Contact.
 - Logout from admin page
+
+## For testing use 
+ - ``domain-name: satyaprasadbehara`` 
+ - ``api-key: FEE7DSFfPCz35KqRTev``
 
 <img  src="https://github.com/beharavenkatasatyaprasad/beharavenkatasatyaprasad/blob/main/gifs/bars.gif" alt=""/>
