@@ -11,8 +11,6 @@ Thanks for checking out this repo [Hackathon-31-10-2020](https://github.com/beha
 
 Challenge is to integrate with the [FreshDesk API](https://developers.freshdesk.com/api/) , get user's freshdesk data and make provisions to list ticket, create ticket, update ticket, delete ticket, list contact, create contact, update contact and delete contact.
 
-we can use any JavaScript framework/library on the front-end. You also have complete control over which packages you use to do things like make HTTP requests or style your project.
-
 ## The Webapp
 
 Click [here](https://affectionate-varahamihira-c70f14.netlify.app/) to preview the app in action.
