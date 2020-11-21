@@ -17,6 +17,8 @@ we can use any JavaScript framework/library on the front-end. You also have comp
 
 Click [here](https://affectionate-varahamihira-c70f14.netlify.app/) to preview the app.
 
+For testing use the domain-name: `satyaprasadbehara` and api-key: `FEE7DSFfPCz35KqRTev`
+
 Users are able to:
 
 - Login to access their admin page using credentials.
